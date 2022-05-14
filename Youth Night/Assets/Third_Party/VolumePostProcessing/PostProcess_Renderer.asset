@@ -1,0 +1,224 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8322300151114265901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f53db7a7da0eee14780fa79447033640, type: 3}
+  m_Name: NewBlit
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  settings:
+    Event: 300
+    blitMaterial: {fileID: 2100000, guid: 2a71f799a50f4544b9776ca312e8d81b, type: 2}
+    blitMaterialPassIndex: 0
+    setInverseViewMatrix: 0
+    requireDepthNormals: 0
+    srcType: 0
+    srcTextureId: _CameraColorTexture
+    srcTextureObject: {fileID: 0}
+    dstType: 0
+    dstTextureId: _BlitPassTexture
+    dstTextureObject: {fileID: 0}
+    overrideGraphicsFormat: 0
+    graphicsFormat: 3
+--- !u!114 &-801445354869703200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a83c5ec32e592b744a5324d757167247, type: 3}
+  m_Name: NewCustomPostProcess
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  settings:
+    renderersAfterOpaque:
+    - izzynab.CustomPostProcessingStack.EdgeEffectRenderer, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    renderersBeforePostProcess:
+    - izzynab.CustomPostProcessingStack.AnalogEffectRenderer, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    - izzynab.CustomPostProcessingStack.AnimeLinesEffectRenderer, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    - izzynab.CustomPostProcessingStack.AquaEffectRenderer, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    - izzynab.CustomPostProcessingStack.AsciiEffectRenderer, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    - izzynab.CustomPostProcessingStack.BinaryEffectRenderer, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    - izzynab.CustomPostProcessingStack.ChromaSplitEffectRenderer, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    - izzynab.CustomPostProcessingStack.StaticAnimeLinesEffectRenderer, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    - izzynab.CustomPostProcessingStack.StreakEffectRenderer, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    - izzynab.CustomPostProcessingStack.GlitchEffectRenderer, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    - izzynab.CustomPostProcessingStack.GrayscaleEffectRenderer, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    - izzynab.CustomPostProcessingStack.HalfToneEffectRenderer, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    renderersAfterPostProcess:
+    - izzynab.CustomPostProcessingStack.SharpenEffectRenderer, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    - izzynab.CustomPostProcessingStack.UtilityEffectRenderer, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    - izzynab.CustomPostProcessingStack.VideoGlitchEffectRenderer, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    - izzynab.CustomPostProcessingStack.SliceEffectRenderer, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    - izzynab.CustomPostProcessingStack.RecolorEffectRenderer, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de640fe3d0db1804a85f9fc8f5cadab6, type: 3}
+  m_Name: PostProcess_Renderer
+  m_EditorClassIdentifier: 
+  m_RendererFeatures:
+  - {fileID: -801445354869703200}
+  m_RendererFeatureMap: e0bd1a2cb2b1e0f4
+  postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
+  shaders:
+    blitPS: {fileID: 4800000, guid: c17132b1f77d20942aa75f8429c0f8bc, type: 3}
+    copyDepthPS: {fileID: 4800000, guid: d6dae50ee9e1bfa4db75f19f99355220, type: 3}
+    screenSpaceShadowPS: {fileID: 4800000, guid: 0f854b35a0cf61a429bd5dcfea30eddd,
+      type: 3}
+    samplingPS: {fileID: 4800000, guid: 04c410c9937594faa893a11dceb85f7e, type: 3}
+    fallbackErrorPS: {fileID: 4800000, guid: e6e9a19c3678ded42a3bc431ebef7dbd, type: 3}
+  m_OpaqueLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_TransparentLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_DefaultStencilState:
+    overrideStencilState: 0
+    stencilReference: 0
+    stencilCompareFunction: 8
+    passOperation: 2
+    failOperation: 0
+    zFailOperation: 0
+  m_ShadowTransparentReceive: 1
+--- !u!114 &3241191605766645355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4641969ffd302f4ba2bcf2d83f19cb5, type: 3}
+  m_Name: NewCustomPostProcess
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  settings:
+    renderersAfterOpaqueAndSky:
+    - Yetman.PostProcess.EdgeDetectionEffectRenderer, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    renderersBeforePostProcess:
+    - Yetman.PostProcess.GradientFogEffectRenderer, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    - Yetman.PostProcess.StreakEffectRenderer, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    renderersAfterPostProcess:
+    - Yetman.PostProcess.AfterImageEffectRenderer, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    - Yetman.PostProcess.GlitchEffectRenderer, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    - Yetman.PostProcess.ChromaSplitEffectRenderer, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    - Yetman.PostProcess.GrayAndInvertEffectRenderer, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    - Yetman.PostProcess.GrayscaleEffectRenderer, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    - Yetman.PostProcess.InvertEffectRenderer, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &3517300899177041586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f53db7a7da0eee14780fa79447033640, type: 3}
+  m_Name: NewCustomRenderPassFeature
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  settings:
+    Event: 300
+    blitMaterial: {fileID: 0}
+    blitMaterialPassIndex: 0
+    setInverseViewMatrix: 0
+    requireDepthNormals: 0
+    srcType: 0
+    srcTextureId: _CameraColorTexture
+    srcTextureObject: {fileID: 0}
+    dstType: 0
+    dstTextureId: _BlitPassTexture
+    dstTextureObject: {fileID: 0}
+    overrideGraphicsFormat: 0
+    graphicsFormat: 4
+--- !u!114 &3742629133136386780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dea88b8bfbd93941b433ee338a4192d, type: 3}
+  m_Name: NewBlit
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  settings:
+    Event: 500
+    blitMaterial: {fileID: 2100000, guid: 693486d1e41c57a4fbca8e8a425eba54, type: 2}
+    blitMaterialPassIndex: 0
+    setInverseViewMatrix: 0
+    srcType: 0
+    srcTextureId: _CameraColorTexture
+    srcTextureObject: {fileID: 0}
+    dstType: 0
+    dstTextureId: _BlitPassTexture
+    dstTextureObject: {fileID: 0}
+--- !u!114 &8328079398762348566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4641969ffd302f4ba2bcf2d83f19cb5, type: 3}
+  m_Name: CustomPostProcess
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  settings:
+    renderersAfterOpaqueAndSky: []
+    renderersBeforePostProcess: []
+    renderersAfterPostProcess:
+    - izzynab.CustomPostProcessingStack.AnimeLinesEffectRenderer, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    - izzynab.CustomPostProcessingStack.GlitchEffectRenderer, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null

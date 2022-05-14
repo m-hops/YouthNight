@@ -1,0 +1,350 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.28f1 (f5400f52e03f) revision 16072719'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit Professional' Language: 'en' Physical Memory: 32702 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.28f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/madel/Desktop/Work/youthnight/Youth Night
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+65262
+Successfully changed project path to: C:/Users/madel/Desktop/Work/youthnight/Youth Night
+C:/Users/madel/Desktop/Work/youthnight/Youth Night
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 55.13 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.28f1 (f5400f52e03f)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/madel/Desktop/Work/youthnight/Youth Night/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2080 (ID=0x1e87)
+    Vendor:   
+    VRAM:     8010 MB
+    Driver:   30.0.15.1259
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56172
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002047 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 57.05 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.525 seconds
+Domain Reload Profiling:
+	ReloadAssembly (525ms)
+		BeginReloadAssembly (56ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (408ms)
+			LoadAssemblies (53ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (122ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (26ms)
+			SetupLoadedEditorAssemblies (165ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (57ms)
+				BeforeProcessingInitializeOnLoad (13ms)
+				ProcessInitializeOnLoadAttributes (67ms)
+				ProcessInitializeOnLoadMethodAttributes (22ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.004521 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 62.55 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.078 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1078ms)
+		BeginReloadAssembly (123ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (15ms)
+		EndReloadAssembly (905ms)
+			LoadAssemblies (86ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (285ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (384ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (63ms)
+				BeforeProcessingInitializeOnLoad (89ms)
+				ProcessInitializeOnLoadAttributes (215ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.73 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3682 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 169.8 MB.
+System memory in use after: 169.9 MB.
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 4119.
+Total: 3.133400 ms (FindLiveObjects: 0.259200 ms CreateObjectMapping: 0.135900 ms MarkObjects: 2.642300 ms  DeleteObjects: 0.095500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Materials/WallSplitTopMaterial.mat
+  artifactKey: Guid(e9df8647c507dce4a980e120fb679a43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/WallSplitTopMaterial.mat using Guid(e9df8647c507dce4a980e120fb679a43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79c2c8dc4eb255bbb87b62d5b70b0b95') in 0.201640 seconds 
+  Import took 0.207671 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/Materials/WallSplitBottomMaterial.mat
+  artifactKey: Guid(dd54bfef45d899f4db1a674617023ae8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/WallSplitBottomMaterial.mat using Guid(dd54bfef45d899f4db1a674617023ae8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57932d2cc496a0776f2e4ac573e78e47') in 0.018172 seconds 
+  Import took 0.023754 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.635923 seconds.
+  path: Assets/Materials/JonMonsterMaterial 1.mat
+  artifactKey: Guid(bbca4e43490e22b4aa318f4c3b54ecba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/JonMonsterMaterial 1.mat using Guid(bbca4e43490e22b4aa318f4c3b54ecba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f8fb2fc9c33f639c7d68cb7239cd7d8') in 0.029889 seconds 
+  Import took 0.035736 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.617384 seconds.
+  path: Assets/Materials/JonPS1Material.mat
+  artifactKey: Guid(bbca4e43490e22b4aa318f4c3b54ecba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/JonPS1Material.mat using Guid(bbca4e43490e22b4aa318f4c3b54ecba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06e512707b7985d9b4a10f19bcf9614a') in 0.013795 seconds 
+  Import took 0.020081 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 39.605536 seconds.
+  path: Assets/Third_Party/URP-PSX-master/URP-PSX
+  artifactKey: Guid(3d85b4f7c121e8743a4f4aef529a0061) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Third_Party/URP-PSX-master/URP-PSX using Guid(3d85b4f7c121e8743a4f4aef529a0061) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c67bd345700af3014018a079967e57ec') in 0.006223 seconds 
+  Import took 0.013228 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.802198 seconds.
+  path: Assets/Third_Party/URP-PSX-master/URP-PSX/Assets
+  artifactKey: Guid(c4407c92aacf0954681538c8a61ce464) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Third_Party/URP-PSX-master/URP-PSX/Assets using Guid(c4407c92aacf0954681538c8a61ce464) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe6eaf89a5d29f0257019e56647e391c') in 0.005066 seconds 
+  Import took 0.011164 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.041497 seconds.
+  path: Assets/Third_Party/URP-PSX-master/URP-PSX/Assets/UniversalRenderPipelineAsset.asset
+  artifactKey: Guid(82d50e16a695c214d8025c47c33a0d1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Third_Party/URP-PSX-master/URP-PSX/Assets/UniversalRenderPipelineAsset.asset using Guid(82d50e16a695c214d8025c47c33a0d1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c9f8d455bc562ae226689ae82b8435e') in 0.018053 seconds 
+  Import took 0.024169 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/Third_Party/URP-PSX-master/URP-PSX/Assets/VolumeProfile.asset
+  artifactKey: Guid(7bbe35cdf5d69e14abbb03eccedaa5bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Third_Party/URP-PSX-master/URP-PSX/Assets/VolumeProfile.asset using Guid(7bbe35cdf5d69e14abbb03eccedaa5bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9e4e638d86c622a6e65dc77614789da') in 0.011354 seconds 
+  Import took 0.016621 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/Third_Party/URP-PSX-master/URP-PSX/Assets/UniversalRenderPipelineAsset_Renderer.asset
+  artifactKey: Guid(5bc392ef1f4545742b089dfb8e6d5608) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Third_Party/URP-PSX-master/URP-PSX/Assets/UniversalRenderPipelineAsset_Renderer.asset using Guid(5bc392ef1f4545742b089dfb8e6d5608) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '115859272f430ece68ca2fd3ad1452a8') in 0.008519 seconds 
+  Import took 0.014494 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 33.125797 seconds.
+  path: Assets/Third_Party/URP-PSX-master/Media
+  artifactKey: Guid(dfb173c0a9578294cbaac855cceedf77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Third_Party/URP-PSX-master/Media using Guid(dfb173c0a9578294cbaac855cceedf77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7696b2b2b50c382600dd7f183e13c19') in 0.329608 seconds 
+  Import took 0.336422 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/Third_Party/URP-PSX-master/Media/04.PNG
+  artifactKey: Guid(0e8c8980a4362bd4d948c98d7f4e0779) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Third_Party/URP-PSX-master/Media/04.PNG using Guid(0e8c8980a4362bd4d948c98d7f4e0779) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b10f5867c19e07b3d59b91ac8f88896') in 0.066060 seconds 
+  Import took 0.071923 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000294 seconds.
+  path: Assets/Third_Party/URP-PSX-master/Media/02.gif
+  artifactKey: Guid(4cace8c47ceb1614a9e164e89cb9eda1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Third_Party/URP-PSX-master/Media/02.gif using Guid(4cace8c47ceb1614a9e164e89cb9eda1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15740509b3ed74c28da44278c50d7fef') in 0.016417 seconds 
+  Import took 0.021640 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/Third_Party/URP-PSX-master/Media/01.gif
+  artifactKey: Guid(95fcb358ca347124d8c6373c0b94e848) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Third_Party/URP-PSX-master/Media/01.gif using Guid(95fcb358ca347124d8c6373c0b94e848) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74f7f7e4c47d63f98f540782d7f1a86d') in 0.012502 seconds 
+  Import took 0.018135 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/Third_Party/URP-PSX-master/Media/03.PNG
+  artifactKey: Guid(ff1c4d477a398a04aafee0bf6b30f3b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Third_Party/URP-PSX-master/Media/03.PNG using Guid(ff1c4d477a398a04aafee0bf6b30f3b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd024c9b4f7e8953b8a2f47f1b65fc6da') in 0.011078 seconds 
+  Import took 0.017087 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.403243 seconds.
+  path: Assets/Third_Party/URP-PSX-master/URP-PSX/Packages
+  artifactKey: Guid(4b3fbc18d2f5cb142a56c675767f0df2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Third_Party/URP-PSX-master/URP-PSX/Packages using Guid(4b3fbc18d2f5cb142a56c675767f0df2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb59e6641609c155eb32b96d038909c8') in 0.102341 seconds 
+  Import took 0.108677 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.288066 seconds.
+  path: Assets/Third_Party/URP-PSX-master/URP-PSX/ProjectSettings
+  artifactKey: Guid(e2d0c18df7329dc459c3d980d4af04e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Third_Party/URP-PSX-master/URP-PSX/ProjectSettings using Guid(e2d0c18df7329dc459c3d980d4af04e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03398e18ffc7d127f2899d7bddf0f8cc') in 0.005158 seconds 
+  Import took 0.011801 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.864276 seconds.
+  path: Assets/Third_Party/URP-PSX-master/URP-PSX/Assets/Materials/Psx_PBR_Buddha.mat
+  artifactKey: Guid(8fe36b030a05e1c4daa299c17c0d17d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Third_Party/URP-PSX-master/URP-PSX/Assets/Materials/Psx_PBR_Buddha.mat using Guid(8fe36b030a05e1c4daa299c17c0d17d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3eae86d45bc76df1f99afc9ce2318ab4') in 0.627088 seconds 
+  Import took 0.633858 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000356 seconds.
+  path: Assets/Third_Party/URP-PSX-master/URP-PSX/Assets/Materials/Psx_Unlit_Buddha.mat
+  artifactKey: Guid(93cb96d729cc80c4bad869c1d04c3152) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Third_Party/URP-PSX-master/URP-PSX/Assets/Materials/Psx_Unlit_Buddha.mat using Guid(93cb96d729cc80c4bad869c1d04c3152) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7e7e4ec8ad9b3ab03def5f37335cdd2') in 0.749589 seconds 
+  Import took 0.756358 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000301 seconds.
+  path: Assets/Third_Party/URP-PSX-master/URP-PSX/Assets/Materials/Psx_PBR_Ground.mat
+  artifactKey: Guid(1255ded71521f6f46b758c53cc3a0887) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Third_Party/URP-PSX-master/URP-PSX/Assets/Materials/Psx_PBR_Ground.mat using Guid(1255ded71521f6f46b758c53cc3a0887) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c66ba5fd1cd9a5074b7762c927e53421') in 0.037871 seconds 
+  Import took 0.043520 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000321 seconds.
+  path: Assets/Third_Party/URP-PSX-master/URP-PSX/Assets/Materials
+  artifactKey: Guid(71545345914628a499de373b5f69d349) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Third_Party/URP-PSX-master/URP-PSX/Assets/Materials using Guid(71545345914628a499de373b5f69d349) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77fecf644debc6fab5a5e630bf6cf9d4') in 0.005911 seconds 
+  Import took 0.013031 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000283 seconds.
+  path: Assets/Third_Party/URP-PSX-master/URP-PSX/Assets/Materials/Psx_PBR_Rock.mat
+  artifactKey: Guid(b8cbb17c7c157aa4d9c5f8df6833da42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Third_Party/URP-PSX-master/URP-PSX/Assets/Materials/Psx_PBR_Rock.mat using Guid(b8cbb17c7c157aa4d9c5f8df6833da42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d725f3c75e23a143d3f7f9734122c8e') in 0.043211 seconds 
+  Import took 0.051330 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000345 seconds.
+  path: Assets/Third_Party/URP-PSX-master/URP-PSX/Assets/Materials/Psx_Unlit_Ground.mat
+  artifactKey: Guid(2215636280ea227409864e6a32ccaf4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Third_Party/URP-PSX-master/URP-PSX/Assets/Materials/Psx_Unlit_Ground.mat using Guid(2215636280ea227409864e6a32ccaf4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c24b5715dbc1d779c32082be2d57460') in 0.026104 seconds 
+  Import took 0.034040 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/Third_Party/URP-PSX-master/URP-PSX/Assets/Materials/Psx_Unlit_Rock.mat
+  artifactKey: Guid(f6e6930d0b899574381302c52d27b1ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Third_Party/URP-PSX-master/URP-PSX/Assets/Materials/Psx_Unlit_Rock.mat using Guid(f6e6930d0b899574381302c52d27b1ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe1daea2c3f71825b218fbb3134a13e6') in 0.026442 seconds 
+  Import took 0.033311 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.926510 seconds.
+  path: Assets/Third_Party/URP-PSX-master/URP-PSX/Assets/Models/Rocks.png
+  artifactKey: Guid(9a6d0e4d300d377488fda7f042a8b725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Third_Party/URP-PSX-master/URP-PSX/Assets/Models/Rocks.png using Guid(9a6d0e4d300d377488fda7f042a8b725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '537a588467156f4838c7c5c455d22efa') in 0.015228 seconds 
+  Import took 0.022757 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 143.100631 seconds.
+  path: Assets/Assorted_Images/Photocopy Texture 8.jpg
+  artifactKey: Guid(4ebf67bec912752469adf1ba7d27bb26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assorted_Images/Photocopy Texture 8.jpg using Guid(4ebf67bec912752469adf1ba7d27bb26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc31c019928fb6daa3015513435aa8cb') in 0.041283 seconds 
+  Import took 0.049774 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/Assorted_Images/SkinlessHuman_HighRes.png
+  artifactKey: Guid(ac9384b9ff6ecd64fb551ee3d99c5b00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assorted_Images/SkinlessHuman_HighRes.png using Guid(ac9384b9ff6ecd64fb551ee3d99c5b00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df3ac592ac247638a5dba9303b425ba9') in 0.043575 seconds 
+  Import took 0.051032 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/Assorted_Images/skytest0.png
+  artifactKey: Guid(def49d53f2e277145923b67477331d6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assorted_Images/skytest0.png using Guid(def49d53f2e277145923b67477331d6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e29576a7f066647b3cc7819247a20b2e') in 0.015934 seconds 
+  Import took 0.023221 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

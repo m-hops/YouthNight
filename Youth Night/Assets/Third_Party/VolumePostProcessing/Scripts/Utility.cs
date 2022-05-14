@@ -1,0 +1,76 @@
+﻿//https://github.com/keijiro/Kino/blob/master/Packages/jp.keijiro.kino.post-processing/Runtime/Internal/Utility.cs
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.Rendering;
+
+[System.Serializable]
+public sealed class GradientParameter : VolumeParameter<Gradient>
+{
+    protected override void OnEnable()
+    {
+        if (value == null) value = GradientUtility.DefaultGradient;
+    }
+}
+public enum DitherType { Bayer2x2, Bayer3x3, Bayer4x4, Bayer8x8 }
+
+public static class GradientUtility
+{
+    static readonly GradientColorKey[] _defaultColorKeys = new[]
+    {
+            new GradientColorKey(Color.blue, 0),
+            new GradientColorKey(Color.red, 1)
+        };
+
+    static readonly GradientAlphaKey[] _defaultAlphaKeys = new[]
+    {
+            new GradientAlphaKey(1, 0),
+            new GradientAlphaKey(1, 1)
+        };
+
+    static readonly int[] _colorKeyPropertyIDs = new[]
+    {
+            Shader.PropertyToID("_ColorKey0"),
+            Shader.PropertyToID("_ColorKey1"),
+            Shader.PropertyToID("_ColorKey2"),
+            Shader.PropertyToID("_ColorKey3"),
+            Shader.PropertyToID("_ColorKey4"),
+            Shader.PropertyToID("_ColorKey5"),
+            Shader.PropertyToID("_ColorKey6"),
+            Shader.PropertyToID("_ColorKey7")
+        };
+
+    public static Gradient DefaultGradient
+    {
+        get
+        {
+            var g = new Gradient();
+            g.SetKeys(_defaultColorKeys, _defaultAlphaKeys);
+            return g;
+        }
+    }
+
+    public static int GetColorKeyPropertyID(int index)
+    {
+        return _colorKeyPropertyIDs[index];
+    }
+
+    public static void SetColorKeys(Material material, GradientColorKey[] colorKeys)
+    {
+        for (var i = 0; i < 8; i++)
+            material.SetVector(
+                GetColorKeyPropertyID(i),
+                colorKeys[Mathf.Min(i, colorKeys.Length - 1)].ToVector()
+            );
+    }
+}
+
+public static class GradientColorKeyExtension
+{
+    public static Vector4 ToVector(this GradientColorKey key)
+    {
+        var c = key.color.linear;
+        return new Vector4(c.r, c.g, c.b, key.time);
+    }
+}
