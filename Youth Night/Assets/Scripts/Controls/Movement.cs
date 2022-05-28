@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+[RequireComponent(typeof(CharacterController))]
 public class Movement : MonoBehaviour
 {
-    [SerializeField] CharacterController controller;
+    CharacterController controller;
     [SerializeField] float speed = 11f;
     Vector2 horizontalInput;
 
@@ -12,28 +14,30 @@ public class Movement : MonoBehaviour
     bool jump;
 
     [SerializeField] float gravity = -30f;
-    Vector3 verticalVelocity = Vector3.zero;
-    [SerializeField] LayerMask groundMask;
-    bool isGrounded;
-    
+    Vector3 VerticalVelocity = Vector3.zero;
+
+
+    private void Awake()
+    {
+        controller = GetComponent<CharacterController>();
+    }
 
     private void Update()
     {
-        //Checks collision with ground layer and then resets fall values to prevent speed loop
-        isGrounded = controller.isGrounded;
-        if (isGrounded)
-        {
-            verticalVelocity.y = 0;
-        }
-
         //Jump Mechanic
         if (jump)
         {
-            if (isGrounded)
+            if (controller.isGrounded)
             {
-                verticalVelocity.y = Mathf.Sqrt(-2f * jumpHeight * gravity);
+                VerticalVelocity.y = Mathf.Sqrt(-2f * jumpHeight * gravity);
             }
             jump = false;
+        }
+        else if (controller.isGrounded)
+        {
+            // -1 to move down toward the ground so controller.isGrounded stays true 
+            // even with small deltatimes
+            VerticalVelocity.y = -1;
         }
 
         //Handles movement on X & Y
@@ -41,10 +45,8 @@ public class Movement : MonoBehaviour
         controller.Move(horizontalVelocity * Time.deltaTime);
 
         //Applies gravity to character
-        verticalVelocity.y += gravity * Time.deltaTime;
-        controller.Move(verticalVelocity * Time.deltaTime);
-
-      
+        VerticalVelocity.y += gravity * Time.deltaTime;
+        controller.Move(VerticalVelocity * Time.deltaTime);
     }
 
     public void ReceiveInput (Vector2 _horizontalInput)

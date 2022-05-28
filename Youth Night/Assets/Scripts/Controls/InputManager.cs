@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Movement))]
+[RequireComponent(typeof(MouseLook))]
 public class InputManager : MonoBehaviour
 {
 
-    [SerializeField] Movement movement;
-    [SerializeField] MouseLook mouseLook;
+    Movement movement;
+    MouseLook mouseLook;
 
     PlayerControls controls;
     PlayerControls.GroundMovementActions groundMovement;
@@ -16,6 +18,9 @@ public class InputManager : MonoBehaviour
 
     private void Awake()
     {
+        movement = GetComponent<Movement>();
+        mouseLook = GetComponent<MouseLook>();
+
         controls = new PlayerControls();
         groundMovement = controls.GroundMovement;
 
