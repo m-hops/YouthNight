@@ -3,7 +3,12 @@ guid: 21b2507c65041364188aee79b42dfb98
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HallwaySegmentA
+    second: {fileID: 2100000, guid: ed8451f5dac21e64b905f500b6cb1cc9, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
