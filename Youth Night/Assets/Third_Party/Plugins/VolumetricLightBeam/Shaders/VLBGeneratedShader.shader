@@ -84,6 +84,7 @@ Shader "Hidden/VLB_URP_SinglePass"
 
                 #define VLB_PASS_OUTSIDEBEAM_FROM_VS_TO_FS 1
                 #define VLB_SRP_API 1
+                #define VLB_DITHERING 1
                 #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
                 #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/DeclareDepthTexture.hlsl"
                 #include "Packages/com.unity.render-pipelines.core/ShaderLibrary/UnityInstancing.hlsl"

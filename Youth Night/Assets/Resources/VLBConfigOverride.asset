@@ -18,7 +18,7 @@ MonoBehaviour:
   geometryRenderQueue: 3000
   _RenderPipeline: 1
   _RenderingMode: 1
-  ditheringFactor: 0
+  ditheringFactor: 0.145
   useLightColorTemperature: 1
   sharedMeshSides: 24
   sharedMeshSegments: 5
