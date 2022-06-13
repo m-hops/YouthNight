@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Lit
+  m_Name: AnimatedWaterMaterial
   m_Shader: {fileID: -6465566751694194690, guid: 8b8804a06bb8437478f07bb9fcf5be5d, type: 3}
   m_ShaderKeywords: _RECEIVE_SHADOWS_OFF _SPECULAR_COLOR
   m_LightmapFlags: 4
