@@ -26,6 +26,7 @@ public class PlayerController : MonoBehaviour
     bool isRunning = false;
     float maxPlayerHeight;
     float startWalkSpeed;
+    AudioManagerMenu audioManagerMenu;
 
     // Used to create character smoothing movement
     Vector2 currentDir = Vector2.zero;
@@ -45,6 +46,7 @@ public class PlayerController : MonoBehaviour
         playerLight = playerFlashlight.GetComponent<Light>();
         maxPlayerHeight = controller.height;
         startWalkSpeed = walkSpeed;
+        audioManagerMenu = GameObject.FindGameObjectWithTag("audioManager").gameObject.GetComponent<AudioManagerMenu>();
     }
     
     void Update()
@@ -111,6 +113,7 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKeyDown("f"))
         {
+            audioManagerMenu.flashlightButtonSFX.PlayOneShot(audioManagerMenu.flashlightButtonSFX.clip);
             flashlightOn = !flashlightOn;
             SetFlashlight(flashlightOn);
         }
@@ -151,7 +154,10 @@ public class PlayerController : MonoBehaviour
 
     public void SetFlashlight(bool isOn)
     {
+        
+        var lightFX = playerLight.GetComponent<VLB.VolumetricLightBeam>();
 
+        lightFX.enabled = isOn;
         playerLight.enabled = isOn;
 
     }
