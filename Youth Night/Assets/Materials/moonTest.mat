@@ -12,17 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  version: 4
+  version: 5
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: moonTest
   m_Shader: {fileID: -6465566751694194690, guid: df8f60c4a83fdd4419d3022d2905a350, type: 3}
-  m_ShaderKeywords: _EMISSION _RECEIVE_SHADOWS_OFF _SPECULARHIGHLIGHTS_OFF _SPECULAR_SETUP
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - _EMISSION
+  - _RECEIVE_SHADOWS_OFF
+  - _SPECULARHIGHLIGHTS_OFF
+  - _SPECULAR_SETUP
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -96,6 +101,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - Vector1_4b8a75b736f64a8690fd3ebd997b8db8: 1.31
     - _AlphaClip: 0

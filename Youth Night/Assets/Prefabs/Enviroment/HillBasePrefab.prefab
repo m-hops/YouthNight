@@ -9,12 +9,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1519292648784995427}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HillBasePrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1519292648784995427
 Transform:
@@ -26,6 +26,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6436562042884446636}
   - {fileID: 515288256485259175}
@@ -88,16 +89,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: HillSidesFBX
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: de09981b73d2ca14c9be3ca2a339ffe2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de09981b73d2ca14c9be3ca2a339ffe2, type: 3}
---- !u!1 &895507540111764765 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: de09981b73d2ca14c9be3ca2a339ffe2, type: 3}
-  m_PrefabInstance: {fileID: 48434093096341580}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &515288256485259175 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: de09981b73d2ca14c9be3ca2a339ffe2, type: 3}
+  m_PrefabInstance: {fileID: 48434093096341580}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &895507540111764765 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: de09981b73d2ca14c9be3ca2a339ffe2, type: 3}
   m_PrefabInstance: {fileID: 48434093096341580}
   m_PrefabAsset: {fileID: 0}
 --- !u!64 &1346706340648934159
@@ -173,16 +178,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: HillSidesFBX (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: de09981b73d2ca14c9be3ca2a339ffe2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de09981b73d2ca14c9be3ca2a339ffe2, type: 3}
---- !u!1 &5467313151345725418 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: de09981b73d2ca14c9be3ca2a339ffe2, type: 3}
-  m_PrefabInstance: {fileID: 5124715437879571131}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4653376151685223760 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: de09981b73d2ca14c9be3ca2a339ffe2, type: 3}
+  m_PrefabInstance: {fileID: 5124715437879571131}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5467313151345725418 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: de09981b73d2ca14c9be3ca2a339ffe2, type: 3}
   m_PrefabInstance: {fileID: 5124715437879571131}
   m_PrefabAsset: {fileID: 0}
 --- !u!64 &4249464089501367838
@@ -258,16 +267,19 @@ PrefabInstance:
       propertyPath: m_Name
       value: HillBaseFBX
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0470577e302156349bc1516957acfcd9, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0470577e302156349bc1516957acfcd9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0470577e302156349bc1516957acfcd9, type: 3}
 --- !u!1 &5915640562426544918 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0470577e302156349bc1516957acfcd9, type: 3}
-  m_PrefabInstance: {fileID: 6834769260441419335}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &6436562042884446636 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0470577e302156349bc1516957acfcd9, type: 3}
   m_PrefabInstance: {fileID: 6834769260441419335}
   m_PrefabAsset: {fileID: 0}
 --- !u!64 &2015718626449297054
@@ -284,3 +296,8 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 2971827100403970117, guid: 0470577e302156349bc1516957acfcd9, type: 3}
+--- !u!4 &6436562042884446636 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0470577e302156349bc1516957acfcd9, type: 3}
+  m_PrefabInstance: {fileID: 6834769260441419335}
+  m_PrefabAsset: {fileID: 0}
